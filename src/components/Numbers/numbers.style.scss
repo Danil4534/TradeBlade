@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+.numberContainer {
+  display: flex;
+  padding: 60px 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  .numberTitle {
+    margin-right: 150px;
+    animation: anim 2s;
+  }
+  .numberTitle h1 {
+    font-family: "IBM Plex Sans";
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 56px;
+    letter-spacing: -4%;
+    text-transform: uppercase;
+  }
+
+  .numberContent {
+    display: flex;
+
+    h3 {
+      font-family: "IBM Plex Sans";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+    }
+    p {
+      font-family: "IBM Plex Sans";
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 110.00000000000001%;
+      letter-spacing: -2%;
+      text-transform: uppercase;
+      font-variant-numeric: slashed-zero;
+      color: rgba(106, 84, 255, 1);
+    }
+  }
+  .numberContent div:nth-child(1) {
+    margin-right: 130px;
+  }
+  .numberContent div:nth-child(2) {
+    margin-right: 80px;
+  }
+}
