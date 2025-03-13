@@ -8,7 +8,7 @@ const userStore = create(() => ({
     },
     {
       name: "Сделки онлайн",
-      anchor: "numbers",
+      anchor: "#profit",
     },
     {
       name: "о компании",

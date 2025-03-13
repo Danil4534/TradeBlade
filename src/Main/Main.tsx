@@ -1,5 +1,6 @@
 import About from "../components/About/About";
 import Banner from "../components/Banner/Banner";
+import FAQ from "../components/FAQ/FAQ";
 import Footer from "../components/Footer/Footer";
 import HowtoStart from "../components/HowToStartUse/HowtoStart";
 import Numbers from "../components/Numbers/Numbers";
@@ -22,7 +23,7 @@ function Main() {
         />
         <Numbers />
       </section>
-      <section>
+      <section id="profit">
         <SliderComponent />
       </section>
       <section id="about">
@@ -45,7 +46,9 @@ function Main() {
       <section>
         <Reviews />
       </section>
-      <section></section>
+      <section>
+        <FAQ />
+      </section>
       <section>
         <RegisterForm />
       </section>

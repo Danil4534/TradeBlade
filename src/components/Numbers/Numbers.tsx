@@ -9,7 +9,7 @@ function Numbers() {
 
   return (
     <>
-      <div className="numberContainer" id="numbers">
+      <div className="numberContainer">
         <div className="numberTitle">
           <h1>Цифры</h1>
           <p>Cентябрь 2022</p>
