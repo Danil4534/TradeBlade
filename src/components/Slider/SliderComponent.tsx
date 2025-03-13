@@ -26,8 +26,8 @@ function SliderComponent() {
         <p>Прибыль</p>
         <p className="slideProfitPercent">{props.profit}</p>
         <div className="slideDate">
-          <p>Цель {props.num}</p>
-          <p style={{ color: "#a698ff" }}>{props.date}</p>
+          <p className="slideNum">Цель {props.num}</p>
+          <p className="slideDate1">{props.date}</p>
         </div>
       </div>
       <img src={SliderIcon} alt="" />

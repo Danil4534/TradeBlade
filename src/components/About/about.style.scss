@@ -106,3 +106,114 @@
     color: rgba(255, 255, 255, 1);
   }
 }
+@media (max-width: 1024px) {
+  .aboutContainer {
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px;
+  }
+  .aboutLeftSide {
+    h1 {
+      font-family: "IBM Plex Sans";
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 56px;
+      letter-spacing: -4%;
+      text-transform: uppercase;
+      animation: anim 2s;
+    }
+    p {
+      width: 413px;
+      font-family: "IBM Plex Sans";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0%;
+      margin-top: 40px;
+    }
+  }
+  .aboutRightSide {
+    .sendEmailForm {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sendEmailInput {
+      width: 500px;
+      height: 60px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      background-color: rgba(32, 26, 79, 1);
+      position: relative;
+      border-radius: 4px;
+      input {
+        width: 500px;
+        padding: 20px 0px 20px 16px;
+        border: none;
+        background-color: transparent;
+        font-family: "IBM Plex Sans";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -1%;
+        text-transform: uppercase;
+        color: #6c688b;
+        outline: none;
+      }
+      button {
+        position: absolute;
+        right: 0px;
+        width: 165px;
+        height: 52px;
+        margin-right: 4px;
+        border-radius: 4px;
+        background: rgba(87, 225, 255, 1);
+        box-shadow: 0px 0px 4px 0px rgba(87, 225, 255, 1);
+        border: 1px solid rgba(87, 225, 255, 1);
+        color: rgba(3, 7, 24, 1);
+        font-family: "IBM Plex Sans";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+          background-color: rgba(3, 7, 24, 1);
+          color: rgba(87, 225, 255, 1);
+        }
+      }
+    }
+  }
+  .aboutRightSideForm {
+    width: 630px;
+    height: 236px;
+    background-color: rgba(106, 84, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-radius: 4px;
+    h1 {
+      font-family: "IBM Plex Sans";
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 36px;
+      letter-spacing: -4%;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}

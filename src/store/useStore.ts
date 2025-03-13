@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-const userStore = create(() => ({
+const userStore = create((set) => ({
   links: [
     {
       name: "Цифры",
@@ -94,6 +94,10 @@ const userStore = create(() => ({
         "Ты попадаешь в сильное крипто окружение, ведь развиваться легче когда нас много. В чате присутствуют люди из нашей команды, которые общаються со всеми, помагают и подсказывают.",
     },
   ],
+
+  activeMenu: false,
+  setActiveMenu: () => set({ activeMenu: true }),
+  setDisActiveMenu: () => set({ activeMenu: false }),
 }));
 
 export default userStore;

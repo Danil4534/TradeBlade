@@ -3,14 +3,18 @@ import Banner from "../components/Banner/Banner";
 import FAQ from "../components/FAQ/FAQ";
 import Footer from "../components/Footer/Footer";
 import HowtoStart from "../components/HowToStartUse/HowtoStart";
+import MobileNav from "../components/MobileNav/mobileNav";
 import Numbers from "../components/Numbers/Numbers";
 import RegisterForm from "../components/RegisterForm/RegisterForm";
 import Reviews from "../components/Reviews/Reviews";
 import SliderComponent from "../components/Slider/SliderComponent";
 import BoxStyle from "../components/StyledBox/BoxStyle";
 import TradeBlade from "../components/TradeBlade/TadeBlade";
+import userStore from "../store/useStore";
 
 function Main() {
+  const { links, activeMenu, setDisActiveMenu } = userStore();
+
   return (
     <>
       <section>
@@ -53,6 +57,7 @@ function Main() {
         <RegisterForm />
       </section>
       <Footer />
+      <MobileNav />
     </>
   );
 }

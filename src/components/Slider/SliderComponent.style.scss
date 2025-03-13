@@ -39,8 +39,8 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      gap: 48px;
-      justify-content: start;
+
+      justify-content: space-between;
       align-items: start;
 
       .slideTitle {
@@ -143,4 +143,21 @@
   border-radius: var(--swiper-scrollbar-border-radius, 10px);
   left: 0;
   top: 0;
+}
+.slideNum {
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
+  color: #d2cbff;
+}
+.slideDate1 {
+  font-family: "IBM Plex Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
+  text-align: right;
+  color: #d2cbff;
 }
