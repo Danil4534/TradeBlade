@@ -7,13 +7,14 @@ const Header: React.FC = () => {
   const { links, setActiveMenu } = userStore();
 
   const handleNav = () => {
-    const body = document.getElementsByTagName("body")[0];
-    if (body) {
-      body.style.overflow = "hidden";
+    const body = document.querySelector("body");
+    const html = document.querySelector("html");
+    if (body && html) {
+      body.style.overflowY = "hidden";
+      html.style.overflowY = "hidden";
     }
     setActiveMenu();
   };
-
   return (
     <>
       <header>

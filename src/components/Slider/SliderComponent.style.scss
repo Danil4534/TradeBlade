@@ -161,3 +161,168 @@
   text-align: right;
   color: #d2cbff;
 }
+@media (width: 374px) {
+  .SliderContainer {
+    height: 100%;
+    padding: 16px !important;
+    background-color: rgba(3, 7, 24, 1);
+    h1 {
+      font-family: "IBM Plex Sans";
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 56px;
+      letter-spacing: -4%;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 1);
+    }
+    .SliderTitle {
+      p {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 4px;
+        color: rgba(53, 255, 158, 1);
+        span {
+          width: 7px;
+          height: 7px;
+          background-color: rgba(53, 255, 158, 1);
+          border-radius: 50%;
+        }
+      }
+    }
+    .Slider {
+      margin-top: 72px;
+      .slide {
+        position: relative;
+        background-color: rgba(106, 84, 255, 1);
+        width: 299px;
+        height: 208px;
+
+        border-radius: 4px;
+        padding: 16px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+        align-items: start;
+
+        .slideTitle {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
+          p {
+            font-family: "IBM Plex Sans";
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: -2%;
+            text-align: right;
+            color: #a698ff;
+          }
+        }
+        .slideProfit {
+          width: 100%;
+
+          display: flex;
+          align-items: start;
+          justify-content: start;
+          flex-direction: column;
+        }
+        .slideProfit > p:first-child {
+          font-family: "IBM Plex Sans";
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: -2%;
+          text-transform: uppercase;
+          color: #d2cbff;
+        }
+        .slideProfitPercent {
+          font-family: "IBM Plex Sans";
+          font-weight: 500;
+          font-size: 28px;
+          line-height: 36px;
+          letter-spacing: -2%;
+          text-transform: uppercase;
+          font-variant-numeric: slashed-zero;
+          color: rgba(53, 255, 158, 1);
+        }
+        .slideDate {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        h2 {
+          font-family: "IBM Plex Sans";
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: -4%;
+          text-transform: uppercase;
+          color: #fff;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          right: -1px;
+          top: 0;
+          width: 50px;
+          height: 50px;
+          background: rgba(3, 7, 24, 1);
+          clip-path: polygon(100% 100%, 0 0, 100% 0);
+          z-index: 99;
+        }
+        img {
+          position: absolute;
+          right: -30px;
+          top: 18px;
+          display: flex;
+          width: 162px;
+          height: 160px;
+          object-fit: unset;
+        }
+      }
+    }
+  }
+
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: absolute;
+    left: var(--swiper-scrollbar-sides-offset, 1%);
+    bottom: -40px;
+    top: var(--swiper-scrollbar-top, auto);
+    z-index: 50;
+    height: var(--swiper-scrollbar-size, 4px);
+    width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
+  }
+  .swiper-scrollbar-drag {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: red;
+    border-radius: var(--swiper-scrollbar-border-radius, 10px);
+    left: 0;
+    top: 0;
+  }
+  .slideNum {
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -2%;
+    color: #d2cbff;
+  }
+  .slideDate1 {
+    font-family: "IBM Plex Sans";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -2%;
+    text-align: right;
+    color: #d2cbff;
+  }
+}

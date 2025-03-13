@@ -47,6 +47,59 @@
     margin-right: 80px;
   }
 }
+
+@media (max-width: 768px) {
+  .numberContainer {
+    display: flex;
+    padding: 16px !important;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    .numberTitle {
+      margin-right: 150px;
+      animation: anim 2s;
+    }
+    .numberTitle h1 {
+      font-family: "IBM Plex Sans";
+      font-weight: 700;
+      font-size: 35px !important;
+      line-height: 56px;
+      letter-spacing: -4%;
+      text-transform: uppercase;
+    }
+
+    .numberContent {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr;
+
+      h3 {
+        font-family: "IBM Plex Sans";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+        letter-spacing: 0%;
+        text-transform: uppercase;
+      }
+      p {
+        font-family: "IBM Plex Sans";
+        font-weight: 500;
+        font-size: 35px !important;
+        line-height: 110.00000000000001%;
+        letter-spacing: -2%;
+        text-transform: uppercase;
+        font-variant-numeric: slashed-zero;
+        color: rgba(106, 84, 255, 1);
+      }
+    }
+    .numberContent div:nth-child(1) {
+      margin-right: 0px !important;
+    }
+    .numberContent div:nth-child(2) {
+      margin-right: 80px;
+    }
+  }
+}
 @media (max-width: 1024px) {
   .numberContainer {
     display: flex;

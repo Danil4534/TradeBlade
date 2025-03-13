@@ -217,7 +217,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 80px;
+    padding: 0px 8px !important;
     background-color: #030718;
     .logo img {
       width: 130px;
@@ -323,7 +323,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 80px;
+    padding: 0px 6px;
     background-color: #030718;
     .Burger {
       display: block;
