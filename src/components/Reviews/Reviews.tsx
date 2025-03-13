@@ -9,7 +9,7 @@ const Reviews: React.FC = () => {
       <div className="reviewsContainer">
         <h1>отзывы учасников комьюнити</h1>
         <div className="cards">
-          {reviews.map((items, index) => (
+          {reviews.map((items, index: number) => (
             <div className="reviewCard" key={index}>
               <img src={items.img} alt="" />
               <div className="reviewUserContent">

@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <h3>Быстрая навигация</h3>
           <nav>
             <ul>
-              {links.map((link, index) => (
+              {links.map((link, index: number) => (
                 <li key={index}>
                   <a href={link.anchor}>{link.name}</a>
                 </li>

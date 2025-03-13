@@ -13,7 +13,7 @@ const Header: React.FC = () => {
       body.style.overflowY = "hidden";
       html.style.overflowY = "hidden";
     }
-    setActiveMenu();
+    setActiveMenu(true);
   };
   return (
     <>

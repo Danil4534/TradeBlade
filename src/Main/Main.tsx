@@ -10,11 +10,8 @@ import Reviews from "../components/Reviews/Reviews";
 import SliderComponent from "../components/Slider/SliderComponent";
 import BoxStyle from "../components/StyledBox/BoxStyle";
 import TradeBlade from "../components/TradeBlade/TadeBlade";
-import userStore from "../store/useStore";
 
 function Main() {
-  const { links, activeMenu, setDisActiveMenu } = userStore();
-
   return (
     <>
       <section>

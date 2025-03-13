@@ -2,8 +2,15 @@ import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
 import styles from "./faq.module.css";
 import chevronDown from "../../assets/icons/accordionIcon.svg";
 
+interface AccordionItemProps {
+  header: string;
+  initialEntered?: boolean;
+}
+
 function FAQ() {
-  const AccordionItem = ({ header, ...rest }) => (
+  const AccordionItem: React.FC<
+    AccordionItemProps & React.ComponentProps<typeof Item>
+  > = ({ header, ...rest }) => (
     <Item
       {...rest}
       header={
@@ -19,12 +26,13 @@ function FAQ() {
       className={styles.item}
       buttonProps={{
         className: ({ isEnter }) =>
-          `${styles.itemBtn} ${isEnter && styles.itemBtnExpanded}`,
+          `${styles.itemBtn} ${isEnter ? styles.itemBtnExpanded : ""}`,
       }}
       contentProps={{ className: styles.itemContent }}
       panelProps={{ className: styles.itemPanel }}
     />
   );
+
   return (
     <div className={styles.accordionContainer}>
       <h1 className={styles.title}>часто задаваемые вопросы</h1>
@@ -35,7 +43,7 @@ function FAQ() {
             является авторизованным официальным брокером биржи Binance. <br />{" "}
             <br />
             Он представляет пользователям множество преимуществ, таких как более
-            високая скорость синхронизации API и возможность создать учетную
+            высокая скорость синхронизации API и возможность создать учетную
             запись Binance через платформу TradeBlade всего в 1 клик.
           </AccordionItem>
 

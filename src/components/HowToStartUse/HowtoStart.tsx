@@ -1,4 +1,3 @@
-import React from "react";
 import "./howToStart.style.scss";
 function HowtoStart() {
   const content = [

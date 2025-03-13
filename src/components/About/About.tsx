@@ -1,4 +1,3 @@
-import React from "react";
 import "./about.style.scss";
 function About() {
   return (

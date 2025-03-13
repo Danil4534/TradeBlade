@@ -4,8 +4,6 @@ import "./mobileNav.style.scss";
 function MobileNav() {
   const { links, activeMenu, setDisActiveMenu } = userStore();
 
-  const widthWindow = window.innerWidth;
-
   const handleNav = () => {
     const body = document.querySelector("body");
     const html = document.querySelector("html");

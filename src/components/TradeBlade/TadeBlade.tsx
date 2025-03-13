@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./tradeBlade.style.scss";
 import userStore from "../../store/useStore";
 function TradeBlade() {
@@ -9,7 +7,7 @@ function TradeBlade() {
       <div className="tradeBladeContainer">
         <h1>tradeblade это</h1>
         <div className="tradeBladeContent">
-          {trades.map((item, index) => (
+          {trades.map((item, index: number) => (
             <div key={index} className="tradeCard">
               <img src={item.icon} alt="" />
               <div className="tradeCardText">

@@ -1,35 +1,41 @@
 import { create } from "zustand";
 
-const userStore = create((set) => ({
+interface Link {
+  name: string;
+  anchor: string;
+}
+
+interface Trade {
+  icon: string;
+  title: string;
+  subTitle: string;
+}
+
+interface Review {
+  title: string;
+  profit: string;
+  img: string;
+  review: string;
+}
+
+interface UserStore {
+  links: Link[];
+  reviews: Review[];
+  trades: Trade[];
+  activeMenu: boolean;
+  setActiveMenu: (activeMenu: boolean) => void;
+  setDisActiveMenu: () => void;
+}
+
+const useUserStore = create<UserStore>((set) => ({
   links: [
-    {
-      name: "Цифры",
-      anchor: "#numbers",
-    },
-    {
-      name: "Сделки онлайн",
-      anchor: "#profit",
-    },
-    {
-      name: "о компании",
-      anchor: "#about",
-    },
-    {
-      name: "как начать",
-      anchor: "#howToUse",
-    },
-    {
-      name: "Taрифы",
-      anchor: "numbers",
-    },
-    {
-      name: "Отзывы",
-      anchor: "numbers",
-    },
-    {
-      name: "faq",
-      anchor: "numbers",
-    },
+    { name: "Цифры", anchor: "#numbers" },
+    { name: "Сделки онлайн", anchor: "#profit" },
+    { name: "О компании", anchor: "#about" },
+    { name: "Как начать", anchor: "#howToUse" },
+    { name: "Тарифы", anchor: "#numbers" },
+    { name: "Отзывы", anchor: "#numbers" },
+    { name: "FAQ", anchor: "#numbers" },
   ],
   reviews: [
     {
@@ -39,7 +45,6 @@ const userStore = create((set) => ({
       review:
         "Я запустил спот-бота 5 января. За 25 дней я заработал более 3 тысяч на споте без единого убытка и без страха ликвидации. Большое спасибо TradeBlade за создание такого замечательного бота.",
     },
-
     {
       title: "@XPonse",
       profit: "Общую прибыль не афиширует",
@@ -52,14 +57,14 @@ const userStore = create((set) => ({
       profit: "Общую прибыль не афиширует",
       img: "../src/assets/gWagon.svg",
       review:
-        "Попробовал. Понравилось. Рекомендую ли я? Да. Но адектватно понимаю, что чем больше людей тем может быть меньше прибыли...",
+        "Попробовал. Понравилось. Рекомендую ли я? Да. Но адекватно понимаю, что чем больше людей, тем может быть меньше прибыли...",
     },
     {
       title: "@sanyaMnS",
       profit: "Общая прибыль 4 405.96 USD",
       img: "../src/assets/@sanyaMnS.svg",
       review:
-        "Сначала немного расстроился ибо заработал 4$ с одной крупной сделки. Но зато понял что все равно в плюсе. На следующей сделке все полетело вверх.",
+        "Сначала немного расстроился, ибо заработал 4$ с одной крупной сделки. Но зато понял, что все равно в плюсе. На следующей сделке все полетело вверх.",
     },
   ],
   trades: [
@@ -77,9 +82,9 @@ const userStore = create((set) => ({
     },
     {
       icon: "../src/assets/icons/icon3.svg",
-      title: "Высокая прибыль каждий день",
+      title: "Высокая прибыль каждый день",
       subTitle:
-        "Каждая сделка показывает хорошие результаты на рынках за счет хорошего денежного и риск менеджмента.",
+        "Каждая сделка показывает хорошие результаты на рынках за счет хорошего денежного и риск-менеджмента.",
     },
     {
       icon: "../src/assets/icons/icon4.svg",
@@ -91,13 +96,12 @@ const userStore = create((set) => ({
       icon: "../src/assets/icons/icon5.svg",
       title: "Сильное окружение",
       subTitle:
-        "Ты попадаешь в сильное крипто окружение, ведь развиваться легче когда нас много. В чате присутствуют люди из нашей команды, которые общаються со всеми, помагают и подсказывают.",
+        "Ты попадаешь в сильное крипто-окружение, ведь развиваться легче, когда нас много. В чате присутствуют люди из нашей команды, которые общаются со всеми, помогают и подсказывают.",
     },
   ],
-
   activeMenu: false,
-  setActiveMenu: () => set({ activeMenu: true }),
+  setActiveMenu: (menu) => set({ activeMenu: menu }),
   setDisActiveMenu: () => set({ activeMenu: false }),
 }));
 
-export default userStore;
+export default useUserStore;
