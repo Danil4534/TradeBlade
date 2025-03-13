@@ -1,9 +1,9 @@
 import React from "react";
 
 import "./reviews.style.scss";
-import userStore from "../../store/useStore";
+import useStore from "../../store/useStore";
 const Reviews: React.FC = () => {
-  const { reviews } = userStore();
+  const { reviews } = useStore();
   return (
     <>
       <div className="reviewsContainer">

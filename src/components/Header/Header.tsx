@@ -1,10 +1,10 @@
 import React from "react";
 import "./header.style.scss";
 import LogoIcon from "../../assets/Logo.svg";
-import userStore from "../../store/useStore";
+import useStore from "../../store/useStore";
 import Burger from "../../assets/icons/burger.svg";
 const Header: React.FC = () => {
-  const { links, setActiveMenu } = userStore();
+  const { links, setActiveMenu } = useStore();
 
   const handleNav = () => {
     const body = document.querySelector("body");

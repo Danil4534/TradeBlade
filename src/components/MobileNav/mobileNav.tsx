@@ -1,8 +1,8 @@
-import userStore from "../../store/useStore";
+import useStore from "../../store/useStore";
 import CloseIcon from "../../assets/icons/closeIcon.svg";
 import "./mobileNav.style.scss";
 function MobileNav() {
-  const { links, activeMenu, setDisActiveMenu } = userStore();
+  const { links, activeMenu, setDisActiveMenu } = useStore();
 
   const handleNav = () => {
     const body = document.querySelector("body");
