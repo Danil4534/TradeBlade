@@ -90,6 +90,11 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .reviewsContainer {
+    padding: 40px !important;
+  }
+}
 @media (max-width: 1024px) {
   .reviewsContainer {
     background-color: #030718;

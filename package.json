@@ -9,11 +9,12 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@szhsin/react-accordion": "^1.4.0",
+    "knip": "^5.46.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sass": "^1.85.1",

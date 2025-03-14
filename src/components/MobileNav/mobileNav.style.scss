@@ -54,6 +54,17 @@
   animation: animationClose 0.3s ease-in-out;
 }
 .navMobileLinks {
+  ul {
+    margin-top: 84px;
+    li {
+      font-family: "IBM Plex Sans";
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+    }
+  }
 }
 
 @keyframes animation {

@@ -44,10 +44,10 @@ function Main() {
         />
         <HowtoStart />
       </section>
-      <section>
+      <section id="reviews">
         <Reviews />
       </section>
-      <section>
+      <section id="faq">
         <FAQ />
       </section>
       <section>

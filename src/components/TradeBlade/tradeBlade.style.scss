@@ -1,8 +1,10 @@
 .tradeBladeContainer {
+  width: clamp(375px, 100%, 100vw);
   height: 788px;
   background-color: #030718;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: start;
   padding: 96px 80px;
   flex-direction: row;
   gap: 128px;
@@ -17,12 +19,18 @@
     animation: anim 2s;
   }
   .tradeBladeContent {
+    width: 100%;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+
+    justify-items: center;
+    align-items: start;
+    row-gap: 56px;
     column-gap: 21px;
     .tradeCard {
-      width: 413px;
+      width: 414px;
+
       display: flex;
       align-items: start;
       flex-direction: row;
@@ -35,6 +43,7 @@
           width: 325px;
           font-family: "IBM Plex Sans";
           font-weight: 500;
+
           font-size: 28px;
           line-height: 36px;
           letter-spacing: -4%;
@@ -60,13 +69,13 @@
     background-color: #030718;
     display: flex;
     justify-content: center;
-    padding: 96px 80px;
+    padding: 48px 40px !important;
     flex-direction: column;
-    gap: 80px;
+    gap: 40px !important;
     h1 {
       font-family: "IBM Plex Sans";
       font-weight: 700;
-      font-size: 44px;
+      font-size: 28px;
       line-height: 56px;
       letter-spacing: -4%;
       text-transform: uppercase;
@@ -125,7 +134,7 @@
     h1 {
       font-family: "IBM Plex Sans";
       font-weight: 700;
-      font-size: 44px;
+
       line-height: 56px;
       letter-spacing: -4%;
       text-transform: uppercase;
@@ -168,6 +177,20 @@
           }
         }
       }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .tradeBladeContainer {
+    width: 100%;
+    background-color: #030718;
+    display: flex;
+    justify-content: center !important;
+    padding: 96px 80px;
+    flex-direction: row;
+    gap: 128px !important;
+    h1 {
+      width: 305px;
     }
   }
 }

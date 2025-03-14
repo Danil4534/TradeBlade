@@ -42,8 +42,8 @@ const useStore = create<UserStore>((set) => ({
     { name: "О компании", anchor: "#about" },
     { name: "Как начать", anchor: "#howToUse" },
     { name: "Тарифы", anchor: "#numbers" },
-    { name: "Отзывы", anchor: "#numbers" },
-    { name: "FAQ", anchor: "#numbers" },
+    { name: "Отзывы", anchor: "#reviews" },
+    { name: "FAQ", anchor: "#faq" },
   ],
   reviews: [
     {
